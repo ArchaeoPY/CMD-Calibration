@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="MayaviQWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>731</width>
+      <height>551</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>870</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionModify_Output_Location"/>
+    <addaction name="actionPrint"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuProcess">
+    <property name="title">
+     <string>Process</string>
+    </property>
+    <addaction name="actionLinear_Drift_Correct"/>
+    <addaction name="actionCubic_Drift_Correct"/>
+    <addaction name="actionDeSpike"/>
+    <addaction name="actionNormalise_Vector"/>
+    <addaction name="actionPeriodic_Filter"/>
+    <addaction name="actionInterpolate"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuProcess"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen_Calibration_File"/>
+   <addaction name="separator"/>
+   <addaction name="actionDeSpike"/>
+   <addaction name="actionCubic_Drift_Correct"/>
+   <addaction name="actionLinear_Drift_Correct"/>
+   <addaction name="separator"/>
+   <addaction name="actionPeriodic_Filter"/>
+   <addaction name="actionNormalise_Vector"/>
+   <addaction name="actionInterpolate"/>
+  </widget>
+  <action name="actionCubic_Drift_Correct">
+   <property name="text">
+    <string>Cubic Drift Correct</string>
+   </property>
+  </action>
+  <action name="actionPeriodic_Filter">
+   <property name="text">
+    <string>Periodic Filter</string>
+   </property>
+  </action>
+  <action name="actionDeSpike">
+   <property name="text">
+    <string>DeSpike</string>
+   </property>
+  </action>
+  <action name="actionLinear_Drift_Correct">
+   <property name="text">
+    <string>Linear Drift Correct</string>
+   </property>
+  </action>
+  <action name="actionNormalise_Vector">
+   <property name="text">
+    <string>Normalise Vector</string>
+   </property>
+  </action>
+  <action name="actionOpen_Calibration_File">
+   <property name="text">
+    <string>Open Calibration File</string>
+   </property>
+  </action>
+  <action name="actionInterpolate">
+   <property name="text">
+    <string>Interpolate</string>
+   </property>
+  </action>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionModify_Output_Location">
+   <property name="text">
+    <string>Modify Output Location</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
